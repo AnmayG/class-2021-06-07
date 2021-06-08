@@ -1,5 +1,5 @@
 ---
-title: "rpubs"
+title: "Police Graph"
 author: "Anmay Gupta"
 output: html_document
 ---
@@ -23,7 +23,7 @@ plot_data <- raw_data %>%
   slice(1:10)
 ```
 
-```{r plot_data, include = FALSE}
+```{r plot_data}
 plot_data %>% mutate(officer_id = as.character(officer_id)) %>%
   ggplot(aes(x = officer_id, y = total)) +
     geom_col() + 
